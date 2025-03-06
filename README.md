@@ -1,18 +1,9 @@
 # EEG-Data-Analysis
 
-This research explores the development and analysis of a hybrid EEG-based model
- combining Wavelet and Fourier transforms with Generative Adversarial Networks
- (GANs) for effective classification of mental states. EEG data, featuring both task
-based (math) and relaxation states, were processed and enhanced through feature
- engineering using Wavelet and Fourier transformations, allowing for the extraction of
- relevant frequency and power characteristics. A comprehensive dataset was constructed
- by merging EEG data and subject metadata, followed by label encoding and one-hot
- encoding of categorical attributes to enhance classification performance.
- To address class imbalances and enhance the model's robustness, a GAN was
- employed, leveraging a generator to create synthetic data representations and a
- discriminator to classify real versus generated data. The discriminator was further
- adapted for binary classification of mental states, achieving notable accuracy in
- distinguishing task-based (math) versus relaxation states. The proposed model
- demonstrates the utility of hybrid spectral feature extraction and GAN-based data
- augmentation in EEG classification tasks, offering potential for applications in real
-time mental state monitoring and neurofeedback systems.
+This project explores a hybrid EEG-based classification model that integrates Wavelet and Fourier transforms with Generative Adversarial Networks (GANs) to classify mental states. The model effectively distinguishes between task-based (math) and relaxation states by leveraging advanced feature extraction and data augmentation techniques. EEG signals are processed through Wavelet and Fourier transformations to extract relevant frequency and power characteristics, ensuring a comprehensive representation of cognitive states. Additionally, subject metadata is incorporated, and categorical attributes are encoded using label encoding and one-hot encoding to enhance classification performance.  
+
+To address class imbalances in the dataset and improve model robustness, a GAN is employed. The generator creates synthetic EEG samples, while the discriminator learns to distinguish between real and generated data. The discriminator is then adapted for binary classification, achieving high accuracy in distinguishing between task-based (math) and relaxation states. This approach demonstrates the effectiveness of hybrid spectral feature extraction and GAN-based augmentation in EEG classification tasks.  
+
+The project has significant applications in real-time mental state monitoring and neurofeedback systems. By providing a reliable method to classify cognitive states, it can be utilized in brain-computer interfaces (BCIs), cognitive training programs, and real-time stress monitoring. The model’s ability to analyze EEG data with enhanced feature extraction and data balancing techniques makes it a promising tool for neuroscience and healthcare applications.  
+
+To run the project, the necessary dependencies such as NumPy, SciPy, TensorFlow, Keras, Matplotlib, and Seaborn must be installed. The dataset undergoes preprocessing to extract EEG features before training the GAN-based classification model. Once trained, the model can be evaluated to visualize classification performance. The results indicate that GAN-based augmentation mitigates class imbalance and improves classification accuracy, while the combination of Wavelet and Fourier transforms provides a richer representation of EEG signals. This project serves as a foundation for future research in EEG-based cognitive state classification and its potential real-world applications.
